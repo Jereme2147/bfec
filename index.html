@@ -11,16 +11,67 @@
 </head>
 <body>
     <nav>
-        <div id="mobile-nav">
-            <h1>Brushy Fork Environmental Consulting, Inc</h1>
+        <!-- fixed to top -->
+        <div id="mobile-nav"> 
+            <div id="mobile-nav-title">
+                <h1>Brushy Fork Environmental Consulting, Inc.</h1>
+            </div>
             <div class="icon">
                 <div class="hamburger">
                 </div>
             </div>
+            <div id="mobile-menu-open">
+                <!-- <div id="mobile-menu-items">  -->
+                    <ul>
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Portfolio</li></a>
+                        <a href="#"><li>News</li></a>
+                        <a href="#"><li>Contact</li></a>
+                    </ul>
+                <!-- </div> -->
+            </div>
+        </div>
+        <div id="desktop-nav">
+            <div id="desktop-title-menu">
+                <div id="desktop-title">
+                    <h1>Brushy Fork Environmental Consulting, Inc.</h1>
+                </div>
+                <div id="desktop-menu">
+                    <ul>
+                        <a href="#">
+                            <li>About</li>
+                        </a>
+                        <a href="#">
+                            <li>Portfolio</li>
+                        </a>
+                        <a href="#">
+                            <li>News</li>
+                        </a>
+                        <a href="#">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div id="desktop-logo">
+                <img src="./img/logo.png" alt="">
+            </div>
         </div>
     </nav>
     <main>
+        <!-- Only shows on mobile -->
+        <div id="mobile-landing-slideshow">
+            <img src="./img/landing600.png" alt="">
+        </div>
+        <!-- only shows desktop -->
+        <div id="desktop-landing-slideshow">
+            <img src="./img/desktop-landing1900.png" alt="">
+        </div>
+        <section class="landing-section">
+            <div class="landing-card">
 
+            </div>
+        </section>
     </main>
     <script src="./js/main.js"></script>
 </body>
