@@ -1,5 +1,13 @@
-$background: #5A86BF;
-$foreground: #F0F3F8;
-$darkBlue: #1A4173;
-$green: #498BA6;
-$tan: #CBCCC7;
+@import './reset.scss'; //imports screen reset and variables
+@import './css/hamburger.scss';
+
+//begin Navigation section
+#mobile-nav {
+    width: 100%;
+    display: flex;
+    h1 {
+        width: 75%;
+        font-size: 18px;
+        font-family: $title;
+    }
+}
