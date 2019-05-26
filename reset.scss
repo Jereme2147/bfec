@@ -19,6 +19,11 @@ $lato: 'Lato', sans-serif;
         @content;
     }
 }
+@mixin small-desktop {
+    @media (min-width: 950px) and (max-width: 1060px) {
+        @content;
+    }
+}
 @mixin large-desktop {
     @media (min-width: 1300px) {
         @content;
@@ -27,7 +32,7 @@ $lato: 'Lato', sans-serif;
 // Screen Reset
 body,
 html {
-    background: $background;
+    background: $foreground;
     height: 100%;
     margin: 0;
 

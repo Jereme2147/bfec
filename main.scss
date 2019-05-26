@@ -13,10 +13,11 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 75px;
     display: flex;
     background: url('./img/nav-background900.png');
+    
     #mobile-nav-title{
     display: flex;
     justify-content: center;
@@ -33,6 +34,10 @@ nav {
         padding-left: 20px;
         color: $foreground;
         text-shadow: 4px 4px 4px lighten(black, 20%);
+
+        @include tablet() {
+            font-size: 22px;
+        }
     }
 }
 #mobile-menu-open {
@@ -104,6 +109,9 @@ nav {
         padding-left: 20px;
         font-size: 46px;
         text-shadow: 3px 3px 3px $background;
+        @include small-desktop() {
+            font-size: 40px;
+        }
     }
 }
 #desktop-menu {
@@ -122,7 +130,7 @@ nav {
         transition: 0.4s;
         padding: 5px;
         &:hover {
-            color: $darkBlue;
+            // color: $darkBlue;
             text-shadow: 1px 1px 2px $foreground;
             background: lighten($background, 5%);
             border-radius: 10px;
@@ -139,6 +147,13 @@ nav {
             width: 100%;
         }
     }
+    @include tablet() {
+        width: 100%;
+        display: block;
+        img { 
+            width: 100%;
+        }
+    }
 }
 #mobile-landing-slideshow {
     width: 100%;
@@ -150,18 +165,118 @@ nav {
     }
     @include desktop() {
         display: none;
+    }@include tablet() {
+        display: none;
     }
 }
-section {
-    width: 100%;
+
+// Landing sections
+.landing-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 0;
-    div{
-        width: 95%;
-        height: 600px; //to be removed once I have content.
-        background: $foreground;
-        border-radius: 5px;
+    width: 95%;
+    @include desktop() {
+        width: 85%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    h2 {
+        color: $darkBlue;
+        font-family: $lato;
+        @include desktop() {
+            font-size: 35px;
+        }
+    }
+    p {
+        color: $darkBlue;
+        font-family: $paragraph;
     }
 }
+.landing-card-title {
+    @include desktop() {
+        width: 30%;
+        padding: 10px;
+    }
+}
+.landing-image-div {
+    @include desktop() {
+        width: 65%;
+    }
+    
+}
+.read-more-btn {
+    color: $darkBlue;
+    font-family: $lato;
+    margin: 40px 10px;
+    border: 1px solid $darkBlue;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    // border-radius: 0;
+}
+section {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 5px;
+    @include desktop() {
+        margin: 30px 30px;
+    }
+}
+.section-left {
+    border-left: 3px solid $background;
+    img {
+        width: 75%;
+        float: right;
+        @include desktop() {
+            // width: 100%;
+            width: 100%;
+            
+        }
+    }
+}
+.section-right {
+    border-right: 3px solid $background;
+    @include desktop() {
+        // flex-direction: row-reverse;
+    }
+    h2 {
+        text-align: end;
+    }
+    img {
+        width: 75%;
+        float: left;
+        @include desktop() {
+            width: 100%;
+        }
+    }
+    #mitigation-readmore{
+        align-self: flex-end;
+    }
+}
+
+
+// Classes for loading larger images on desktop and smaller on mobile.
+.mobile-img {
+    @include desktop() {
+        display: none;
+    }
+}
+.desktop-img {
+    display: none;
+    @include desktop() {
+        display: block;
+    }
+}
+
+
+
+// Begin Footer *****************************
+footer {
+    width: 100%;
+    height: 75px;
+    background: $background;
+}
+// End Footer *****************************
