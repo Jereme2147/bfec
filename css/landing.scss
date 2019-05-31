@@ -1,4 +1,4 @@
-@import '../reset.scss';
+@import './reset.scss';
 main {
     display: flex;
     flex-direction: column;
@@ -98,6 +98,7 @@ nav {
         left: 0;
         background: url("./img/nav-background900.png");
         display: flex;
+        z-index: 1;
     }
 }
 #desktop-title-menu {
@@ -314,7 +315,7 @@ nav {
 }
 .section-left {
     border-left: 3px solid $background;
-    perspective: 1000px;
+    perspective: 2500px;
     h2 {
         text-align: left;
     }
@@ -344,7 +345,7 @@ nav {
 }
 .section-right {
     border-right: 3px solid $background;
-    perspective: 1000px;
+    perspective: 2500px;
     .landing-card-title {
         display: flex;
         flex-direction: column;

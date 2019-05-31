@@ -29,11 +29,6 @@ $lato: 'Lato', sans-serif;
         @content;
     }
 }
-@mixin tiny-phone {
-    @media (max-width: 350px) {
-        @content;
-    }
-}
 // Screen Reset
 body,
 html {
