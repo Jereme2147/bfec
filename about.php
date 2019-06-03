@@ -4,9 +4,9 @@
 
 <!-- content -->
 <div id="mission-statement">
-    <h3>
+    <!-- <h3>
         Our Mission Statement -
-    </h3>
+    </h3> -->
     <p>
         <quote>"We’ve made it our mission to <strong>enhance our natural resources</strong> through the 
         <strong>restoration and conservation</strong> of our aquatic ecosystems and their surrounding lands."</quote>
@@ -14,8 +14,28 @@
 </div>
 <div id="about-banner-div">
     <!-- dynamic should be loaded from WP -->
-    <img src="./img/about-1500.png" alt="">
+    <img src="./img/about-1500.png" class="desktop-img"alt="">
+    <img src="./img/about-600.png"class="mobile-img" alt="">
 </div>
+<section  id="about-div">
+    <div>
+    <h2>About Us</h2>
+    <p>
+    &nbsp; &nbsp; &nbsp; &nbsp;Brushy Fork Environmental Consulting provides full delivery ecological restoration 
+    projects to the mountain areas of NC, TN, & VA. Our team of consultants, biologists, 
+    and engineers are able to provide design & build services from assessment and design 
+    through implementation on various projects ranging from mitigation banking to private 
+    or grant funded restoration. We at Brushy Fork love our jobs and where we get to 
+    live! We are highly motivated and efficient; ensuring that our stream restoration 
+    projects are self-sustaining and resilient. The BFEC team is also thoroughly trained 
+    in all aspects of surface water hydrology, stream/wetland delineations, jurisdictional 
+    determinations, stream and wetland ecology, environmental regulations, and GIS-based 
+    analysis; allowing us to offer a broad array of environmental services. Together we 
+    provide high quality environmental solutions to the public; reflected in our lasting 
+    relationships with clients and partners.
+    </p>
+</div>
+</section>
 <section class="about-section" id="staff-div">
     <h2>The BFEC Team</h2>
     <!-- all should by dynamicly loaded. -->
@@ -72,14 +92,14 @@
         <a href="#">
         <img src="./staff/rene.png" alt="">
         <h4>Rennan Inman</h4>
-        <p>Equipment Operator</p>
+        <p>Construction Supervisor/Operator</p>
         </a>
     </div>
     <div class="about-employee">
         <a href="#">
         <img src="./staff/mike.png" alt="">
         <h4>Mike Elliot</h4>
-        <p>Construction Supervisor/Operator</p>
+        <p>Construction Superintendent</p>
         </a>
     </div>
     <div class="about-employee">
@@ -91,6 +111,7 @@
     </div>
 
 </section>
+
 <section class="about-section" id="opportunities-div">
 <!-- all should by dynamicly loaded. -->
     <h2>Opportunities</h2>

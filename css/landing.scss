@@ -20,12 +20,16 @@ nav {
     height: 75px;
     display: flex;
     background: url('./img/nav-background900.png');
+    z-index: 1;
     
     #mobile-nav-title{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 75%;
+    a {
+        text-decoration: none;
+    }
 }
 
     h1 {
@@ -56,6 +60,7 @@ nav {
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+    z-index: 1;
     ul {
         list-style: none;
         padding: 0;
@@ -114,6 +119,9 @@ nav {
     flex-grow: 2;
     display: flex;
     align-items: center;
+    a {
+        text-decoration: none;
+    }
     h1 {
         color: $foreground;
         font-family: $title;
@@ -171,6 +179,13 @@ nav {
             width: 100%;
         }
     }
+    @include small-desktop() {
+        width: 100%;
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
     @include tablet() {
         width: 100%;
         display: block;
@@ -190,6 +205,9 @@ nav {
     @include desktop() {
         display: none;
     }@include tablet() {
+        display: none;
+    }
+    @include small-desktop() {
         display: none;
     }
 }
@@ -315,7 +333,7 @@ nav {
 }
 .section-left {
     border-left: 3px solid $background;
-    perspective: 2500px;
+    perspective: 1000px;
     h2 {
         text-align: left;
     }
@@ -326,7 +344,7 @@ nav {
         transition: 1s;
         @include desktop() {
             width: 0;
-            transform: rotateY(50deg);
+            transform: rotateY(20deg);
             box-shadow: -75px -25px 5px darken($foreground, 10%);
             &:hover {
                 transform: rotateY(0);
@@ -345,7 +363,7 @@ nav {
 }
 .section-right {
     border-right: 3px solid $background;
-    perspective: 2500px;
+    perspective: 1000px;
     .landing-card-title {
         display: flex;
         flex-direction: column;
@@ -368,7 +386,7 @@ nav {
         float: left;
         @include desktop() {
             width: 0;
-            transform: rotateY(-50deg);
+            transform: rotateY(-20deg);
             box-shadow: 75px 25px 5px darken($foreground, 10%);
             &:hover {
                 transform: rotateY(0);
@@ -396,12 +414,23 @@ nav {
     @include desktop() {
         display: none;
     }
+    @include small-desktop() {
+        display: none;
+    }
+    @include tablet() {
+        display: none;
+    }
 }
 .desktop-img {
     display: none;
     @include desktop() {
         display: block;
-        
+    }
+    @include small-desktop() {
+        display: block;
+    }
+    @include tablet() {
+        display: block;
     }
 }
 

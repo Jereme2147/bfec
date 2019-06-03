@@ -16,6 +16,7 @@ $lato: 'Lato', sans-serif;
 }
 @mixin desktop {
     @media (min-width: 950px) {
+        // @media (min-width: 1061px) {
         @content;
     }
 }
