@@ -1,16 +1,11 @@
 @import './reset.scss';
-#about-banner-div {
-    width: 100%;
-    img {
-        width: 100%;
-    }
-}
+
 #about-div {
     // color: $darkBlue;
     // font-family: $paragraph;
     // width: 75%;
     margin: 15px 5px;
-    border-left: 3px solid $background;
+    
     align-items: center;
     font-family: $paragraph;
     color: $darkBlue;
@@ -21,7 +16,8 @@
     }
     p {
         text-align: left;
-        padding: 0 5px;
+        padding: 0 5px 0 10px;
+        // border-left: 3px solid $background;
 
     }
     @include desktop() {
@@ -152,9 +148,9 @@
     }
 }
 
-#staff-div {
-    border-right: 3px solid $background;
-}
-#opportunities-div {
-    border-left: 3px solid $background;
-}
+// #staff-div {
+//     border-right: 3px solid $background;
+// }
+// #opportunities-div {
+//     border-left: 3px solid $background;
+// }

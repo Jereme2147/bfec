@@ -9,7 +9,7 @@
         <div id="desktop-landing-slideshow">
             <img src="./img/desktop-landing1900.png" alt="">
         </div>
-        <section class="landing-section section-left" id="landing-section-1">
+        <section class="landing-section card-left section-left" id="landing-section-1">
             <div class="landing-card">
                 <div class="landing-card-title">
                         <h2>Stream Restoration</h2>
@@ -33,7 +33,7 @@
                 <!-- </div> -->
             </div>
         </section>
-        <section class="landing-section section-right" id="landing-section-2">
+        <section class="landing-section card-right section-right" id="landing-section-2">
             <div class="landing-card">
                 <div class="landing-card-title">
                     <h2>Mitigation</h2>
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </section>
-        <section class="landing-section section-left" id="landing-section-3">
+        <section class="landing-section card-left section-left" id="landing-section-3">
             <div class="landing-card">
                 <div class="landing-card-title">
                     <h2>Stream and Wetland Determinations</h2>    

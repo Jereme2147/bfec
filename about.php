@@ -12,7 +12,7 @@
         <strong>restoration and conservation</strong> of our aquatic ecosystems and their surrounding lands."</quote>
     </p>
 </div>
-<div id="about-banner-div">
+<div class="banner-div">
     <!-- dynamic should be loaded from WP -->
     <img src="./img/about-1500.png" class="desktop-img"alt="">
     <img src="./img/about-600.png"class="mobile-img" alt="">
@@ -20,7 +20,7 @@
 <section  id="about-div">
     <div>
     <h2>About Us</h2>
-    <p>
+    <p class="card-left">
     &nbsp; &nbsp; &nbsp; &nbsp;Brushy Fork Environmental Consulting provides full delivery ecological restoration 
     projects to the mountain areas of NC, TN, & VA. Our team of consultants, biologists, 
     and engineers are able to provide design & build services from assessment and design 
@@ -36,7 +36,7 @@
     </p>
 </div>
 </section>
-<section class="about-section" id="staff-div">
+<section class="about-section card-right" id="staff-div">
     <h2>The BFEC Team</h2>
     <!-- all should by dynamicly loaded. -->
     <div class="about-employee">
@@ -112,7 +112,7 @@
 
 </section>
 
-<section class="about-section" id="opportunities-div">
+<section class="about-section card-left" id="opportunities-div">
 <!-- all should by dynamicly loaded. -->
     <h2>Opportunities</h2>
     <div class="opportunities-div">

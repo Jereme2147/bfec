@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav>
-        <div id="mobile-nav"> 
+        <div class="mobile-nav" id="mobile-nav"> 
             <div id="mobile-nav-title">
                <a href="./"><h1>Brushy Fork Environmental Consulting, Inc.</h1></a>
             </div>
@@ -19,11 +19,11 @@
                 <div class="hamburger">
                 </div>
             </div>
-            <div id="mobile-menu-open">
+            <div class="mobile-menu-open" id="mobile-menu-open">
                     <ul>
                         <a href="./"><li>Home</li></a>
                         <a href="./about.php"><li>About</li></a>
-                        <a href="#"><li>Portfolio</li></a>
+                        <a href="./portfolio.php"><li>Portfolio</li></a>
                         <a href="#"><li>News</li></a>
                         <a href="#"><li>Contact</li></a>
                     </ul>
@@ -39,7 +39,7 @@
                         <a href="./about.php">
                             <li>About</li>
                         </a>
-                        <a href="#">
+                        <a href="./portfolio.php">
                             <li>Portfolio</li>
                         </a>
                         <a href="#">

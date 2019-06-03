@@ -12,17 +12,8 @@ html h3 {
   margin: 0;
 }
 
-#about-banner-div {
-  width: 100%;
-}
-
-#about-banner-div img {
-  width: 100%;
-}
-
 #about-div {
   margin: 15px 5px;
-  border-left: 3px solid #5A86BF;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -37,7 +28,7 @@ html h3 {
 
 #about-div p {
   text-align: left;
-  padding: 0 5px;
+  padding: 0 5px 0 10px;
 }
 
 @media (min-width: 950px) {
@@ -206,13 +197,5 @@ html h3 {
   .about-section h4 {
     font-size: 25px;
   }
-}
-
-#staff-div {
-  border-right: 3px solid #5A86BF;
-}
-
-#opportunities-div {
-  border-left: 3px solid #5A86BF;
 }
 /*# sourceMappingURL=about.css.map */

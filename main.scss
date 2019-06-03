@@ -1,12 +1,121 @@
+//see Landing.scss for mobile nav css
 @import './css/reset.scss'; //imports screen reset and variables
 @import './css/hamburger.scss';
 @import './css/landing.scss';
 @import './css/about.scss';
 
-#portfolio-thumb {
+.banner-div {
     width: 100%;
+    img {
+        width: 100%;
+    }
+}
+#portfolio-menu {
+    width: 100%;
+}
+#page-mobile-menu-open {
+    opacity: 0;
+    pointer-events: none;
+    // background: url("./img/nav-background900.png");
+    background: $background;
+    position: fixed;
+    // top: 20%;
+    left: 0;
+    width: 100vw;
+    height: 40%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    z-index: 1;
+    ul {
+        list-style: none;
+        padding: 0;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: space-around;
+
+    }
+    ul a, li {
+        text-decoration: none;
+        font-family: $title;
+        font-weight: bolder;
+        color: $foreground;
+        font-size: 20px;
+    }
+    ul:last-child {
+        text-align: center;
+    }
+}
+.portfolio-desktop-nav {
+    display: none;
+    @include desktop(){
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 5px;
+        border: 2px solid $background;
+        align-items: center;
+        font-family: $paragraph;
+        color: $darkBlue;
+        div {
+            width: 85%;
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                flex-wrap: wrap;
+                
+                a {
+                    padding: 10px;
+                    text-decoration: none;
+                    color: $darkBlue;
+                    text-transform: uppercase;
+                    text-shadow: 1px 1px 1px $background;
+                    flex-grow: 1;
+                    margin-bottom: 2px;
+                    transition: 0.4s;
+                    &:hover {
+                        // border-bottom: 2px solid $darkBlue;
+                        // margin-bottom: 0;
+                        text-shadow: none;
+                        color: $background;
+                    }
+                }
+            }
+        }
+    }
+}
+.page-mobile-nav {
+    // display: block;
+    // width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: $darkBlue;
+    h3 {
+        font-family: $header;
+        font-size: 25px;
+    }
+    i {
+        font-size: 35px;
+    }
+    @include desktop() {
+        display: none;
+    }
+}
+#portfolio-thumb {
+    width: 95%;
     display: flex;
     flex-direction: column;
+    @include desktop() {
+        width: 85%;
+    }
 }
 .portfolio-thumb-container {
     display: flex;
@@ -38,7 +147,8 @@
     }
     @include desktop() {
         // width: 44%;
-        // flex-direction: row;
+        flex-direction: row;
+        flex-wrap: wrap;
         div {
             // display: flex;
             // flex-direction: row;
@@ -58,18 +168,43 @@
         }
     }
 }
-.portfolio-left {
-    border-left: 2px solid $background;
+
+//card borders
+.card-left {
+    border-left: 3px solid $background;
 }
-.portfolio-right {
-    border-right: 2px solid $background;
+.card-right {
+    border-right: 3px solid $background;
 
 }
+// Classes for loading larger images on desktop and smaller on mobile.
+.mobile-img {
+    @include desktop() {
+        display: none;
+    }
+    @include small-desktop() {
+        display: none;
+    }
+    @include tablet() {
+        display: none;
+    }
+}
+#mobile-hamburger {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+//see Landing.scss for mobile nav css
 .portfolio-thumb-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    @include desktop() {
+        width: 45%;
+    }
+
 }
 #portfolio-title {
     font-family: $title;

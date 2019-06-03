@@ -4,6 +4,7 @@ let tablet = window.matchMedia("(min-width: 600px)");
 let desktop = window.matchMedia("(min-width: 950px)");
 
 const icon = document.getElementsByClassName('icon');
+//header mobile menu
 const menuOpen = document.getElementById('mobile-menu-open');
 for (let i = 0; i < icon.length; i++){
     icon[i].addEventListener('click', function () {
@@ -17,7 +18,18 @@ for (let i = 0; i < icon.length; i++){
         }
     });
 };
-
+//reusable menu funtion
+function burger(id) {
+    const burger = document.getElementById('mobile-hamburger');
+    const menu = document.getElementById('page-mobile-menu-open');
+    if (menu.style.opacity == "1"){
+        menu.style.opacity = '0';
+        menu.style.pointerEvents = 'none';
+    } else {
+        menu.style.opacity = "1";
+        menu.style.pointerEvents = "auto";
+    }
+}
 //functions for landing page image loading.
 //function to determine if an image is within the viewport. 
 // not called until scroll

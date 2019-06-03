@@ -9,7 +9,7 @@ nav {
     width: 100%;
 }
 
-#mobile-nav {
+.mobile-nav {
     @include desktop(){
         display: none;
     }
@@ -47,7 +47,7 @@ nav {
         }
     }
 }
-#mobile-menu-open {
+.mobile-menu-open {
     opacity: 0;
     pointer-events: none;
     background: url("./img/nav-background900.png");
@@ -332,7 +332,7 @@ nav {
     }
 }
 .section-left {
-    border-left: 3px solid $background;
+    // border-left: 3px solid $background;
     perspective: 1000px;
     h2 {
         text-align: left;
@@ -362,7 +362,7 @@ nav {
     }
 }
 .section-right {
-    border-right: 3px solid $background;
+    // border-right: 3px solid $background;
     perspective: 1000px;
     .landing-card-title {
         display: flex;
@@ -409,18 +409,8 @@ nav {
 }
 
 
-// Classes for loading larger images on desktop and smaller on mobile.
-.mobile-img {
-    @include desktop() {
-        display: none;
-    }
-    @include small-desktop() {
-        display: none;
-    }
-    @include tablet() {
-        display: none;
-    }
-}
+
+
 .desktop-img {
     display: none;
     @include desktop() {
