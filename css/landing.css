@@ -87,7 +87,6 @@ nav {
   position: fixed;
   top: 20%;
   width: 100vw;
-  height: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,18 +97,14 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  z-index: 1;
+  z-index: 4;
 }
 
 .mobile-menu-open ul {
   list-style: none;
   padding: 0;
-  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,6 +117,7 @@ nav {
   -webkit-box-align: space-around;
       -ms-flex-align: space-around;
           align-items: space-around;
+  z-index: 5;
 }
 
 .mobile-menu-open ul a {
@@ -130,6 +126,11 @@ nav {
   font-weight: bolder;
   color: #F0F3F8;
   font-size: 44px;
+  z-index: 5;
+}
+
+.mobile-menu-open ul a li {
+  z-index: 5;
 }
 
 #desktop-logo {

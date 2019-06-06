@@ -21,7 +21,7 @@ for (let i = 0; i < icon.length; i++){
 //reusable menu funtion
 function burger(id) {
     const burger = document.getElementById('mobile-hamburger');
-    const menu = document.getElementById('page-mobile-menu-open');
+    const menu = document.getElementById('portfolio-page-mobile-menu-open');
     if (menu.style.opacity == "1"){
         menu.style.opacity = '0';
         menu.style.pointerEvents = 'none';

@@ -54,21 +54,20 @@ nav {
     position: fixed;
     top: 20%;
     width: 100vw;
-    height: 40%;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     transition: 0.4s;
-    z-index: 1;
+    z-index: 4;
     ul {
         list-style: none;
         padding: 0;
-        height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: space-around;
+        z-index: 5;
 
     }
     ul a {
@@ -77,6 +76,10 @@ nav {
         font-weight: bolder;
         color: $foreground;
         font-size: 44px;
+        z-index: 5;
+    }
+    ul a li {
+        z-index: 5;
     }
 }
 
