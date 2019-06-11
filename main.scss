@@ -3,186 +3,154 @@
 @import './css/hamburger.scss';
 @import './css/landing.scss';
 @import './css/about.scss';
+@import './css/portfolio.scss';
 
-
-#portfolio-menu {
-    width: 100%;
-}
-#portfolio-page-mobile-menu-open {
-    opacity: 0;
-    pointer-events: none;
-    // background: url("./img/nav-background900.png");
-    background: $background;
-    position: fixed;
-    // top: 20%;
-    left: 0;
-    width: 100vw;
-    // height: 40%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-    z-index: 99;
-    ul {
-        list-style: none;
-        padding: 0;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: space-around;
-
-    }
-    ul a, li {
-        text-decoration: none;
-        font-family: $title;
-        font-weight: bolder;
-        color: $foreground;
-        font-size: 20px;
-    }
-    ul:last-child {
-        text-align: center;
-    }
-}
-#portfolio-all-categories{
-    text-align: center;
-}
-.portfolio-desktop-nav {
-    display: none;
-    @include desktop(){
-        // width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 15px 5px;
-        // border: 2px solid $background;
-        align-items: center;
-        font-family: $paragraph;
-        color: $darkBlue;
-        div {
-            width: 85%;
-            ul {
-                display: flex;
-                flex-direction: row;
-                list-style: none;
-                flex-wrap: wrap;
-                justify-content: center;
-                a {
-                    padding: 10px;
-                    text-decoration: none;
-                    color: $darkBlue;
-                    text-transform: uppercase;
-                    text-shadow: 1px 1px 1px $background;
-                    // flex-grow: 1;
-                    width: 30%;
-                    margin-bottom: 2px;
-                    transition: 0.4s;
-                    &:hover {
-                        // border-bottom: 2px solid $darkBlue;
-                        // margin-bottom: 0;
-                        text-shadow: none;
-                        color: $background;
-                    }
-                }
-            }
-        }
-    }
-}
-.portfolio-page-mobile-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: $darkBlue;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    h3 {
-        font-family: $header;
-        font-size: 25px;
-    }
-    i {
-        font-size: 35px;
-    }
-    @include desktop() {
-        display: none;
-    }
-}
-#portfolio-thumb {
+.staff-single-container {
     width: 95%;
     display: flex;
     flex-direction: column;
     @include desktop() {
-        width: 85%;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 50px;
+        justify-content: space-around;
+        width: 80%;
+        margin: 20px 0;
     }
 }
-.portfolio-thumb-container {
-    // margin: 15px 5px;
-    font-family: $paragraph;
-    color: $darkBlue;
-    display: flex;
-    width: 100%;
-    opacity: .99;
-    justify-content: center;
-    img {
-        position: relative;
-        // z-index: 2;
-        width: 100%;
-    }
-    span {
-            z-index: 2;
-            opacity: 1;
-            position: absolute;
-            // margin-top: 75px;
-            // margin-left: 30px;
-            color: $foreground;
-            text-shadow: 1px 1px 1px $darkBlue;
-            transition: .5s;
-
-        }
+.staff-single-title-image-bio {
     @include desktop() {
         display: flex;
-        width: 30%;
-        // height: 150px;
-        background-size: cover;
-        height: 185px;
-        overflow: hidden;
-        background: black;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        width: 45%;
+    }
+    
+}
+.staff-single-bio {
+    // width: 95%;
+    border-right: 3px solid $background;
+    margin-top: 10px;
+    p {
+        width: 95%;
+        color: $darkBlue;
+        font-family: $paragraph;
+        padding: 5px;
+        margin-right: 5px;
+    }
+    @include desktop() {
+        width: 100%;
+        padding: 20px;
+        // border-right: none;
+    }
+}
+.staff-single-image {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: flex-end;
+    // justify-content: center;
+    text-align: center;
+    border-left: 3px solid $background;
+    // border-left: 20px solid $background;
+    img {
+        width: 75%;
+    }
+    @include desktop() {
+        cursor: pointer;
         img {
-            width: 100%;
-            // height: auto;
-            position: relative;
-            z-index: 2;
-            transition: .5s;
-            // background: black;
+            width: 60%;
+            box-shadow: 20px 20px 10px darken($foreground, 30%);
+            transition: 0.5s;
         }
-        span {
-            z-index: 3;
-            opacity: 0;
-            position: absolute;
-            margin-top: 75px;
-            // margin-left: 30px;
-            color: $foreground;
-            text-shadow: 1px 1px 1px $darkBlue;
-            transition: .5s;
+        justify-content: center;
+        border-left: none;
+    }
+}
+.staff-single-name-title {
+    color: $darkBlue;
+    // width: 95%;
+    // border-right: 20px solid $background;
+    padding: 20px;
+    margin: 10px 0;
+    border-right: 3px solid $background;
+    h3 {
+        text-align: center;
+        font-family: $header;
+        font-size: 25px;
+    }
+    h4 {
+        text-align: center;
+        font-family: $header;
+        margin: 0;
+    }
+    h3, h4 {
+        text-align: left;
+    }
+    @include desktop() {
+        border-right: none;
+        display: flex;
+        flex-direction: column;
+        // flex-direction: row;
+        // justify-content: space-around;
+        // align-items: flex-end;
+        align-items: center;
+        width: 100%;
+        border-right: 3px solid $background;
+        
+        
+        h3 {
+            font-size: 35px;
+            width: 100%;
+            text-align: center;
+        }
+        h4 {
+            font-size: 25px;
+            width: 100%;
+            text-align: right;
 
         }
     }
 }
-.portfolio-thumb-container:hover > span {
+.staff-single-qualifications, .staff-single-expertise{
+    color: $darkBlue;
+    margin: 10px 0;
+    ul {
+        font-family: $paragraph;
+    }
+    h3 {
+        font-family: $header;
+        padding-left: 10px;
+    }
     @include desktop() {
-        opacity: 1;
+        ul {
+            width: 80%;
+        }
+        p {
+            font-size: 25px;
+        }
     }
 }
-.portfolio-thumb-container:hover > a img {
-    @include desktop(){
-        opacity: .5;
+.staff-single-qual-expert {
+    @include desktop() {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 45%;
     }
 }
+.staff-single-qualifications {
+    border-left: 3px solid $background;
+    @include desktop() {
+        border-left: none;
+    }
+}
+.staff-single-expertise {
+    border-right: 3px solid $background;
+    @include desktop() {
+        border-right: none;
+    }
+}
+
 // *************************common classes**************************************
 //card borders
 .card-left {
@@ -210,6 +178,11 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+}
+.no-banner-spacer {
+    //for when there's no banner to position items
+    // width: 100%;
+    height: 75px;
 }
 //see Landing.scss for mobile nav css
 
